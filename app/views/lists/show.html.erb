@@ -13,3 +13,4 @@
 
 <%= link_to "Add a new bookmark", new_list_bookmark_path(@list)%>
 <%= link_to "Back to list", lists_path%>
+<%= link_to "Delete this list", list_path(@list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
